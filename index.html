@@ -301,7 +301,19 @@
         </div>
       </div>
     </section>
+
+    <section id="Personal">
+      <div class="container">
+        <h1 class="career__title">Personal</h1>
+        <div class="career__position" id="personal">
+          <p class="portfolio__title" id="personal-title"></p>
+          <p class="career__details" id="personal-date"></p>
+        </div>
+      </div>
+    </section>
+    
   </div>
+  
 
 
 
@@ -476,6 +488,34 @@
           link: "https://twitter.com/i/status/1485512142648320000"
         },
       ],
+      Personal:[
+        {
+          title: "Introduction",
+          description: [
+          "안녕하세요! 2000년생의 열정적인 젊은 개발자입니다.",
+          "어릴 적 장래희망란에는 항상 '프로그래머'가 적혀 있었고, 꿈을 향해 꾸준히 달려왔습니다.",
+          "현재는 컴퓨터공학을 전공하며 공장 자동화 분야에 관심을 두고 경험을 쌓아 나가고 있습니다.",
+          "저는 IQ 140 이상의 멘사 회원으로, 문제 해결과 학습 능력이 뛰어나다는 강점을 가지고 있습니다.",
+          "이러한 강점을 살려 개발뿐만이 아닌 PM으로써 사업을 이끌어 나가는 능력을 키워나가고 있습니다.",
+          "저는 '가치를 증명합니다'라는 모토를 가지고 있으며, 어떤 일을 하든 최선을 다해 성과를 내고 있습니다.",
+          "<br>", 
+          "<br>",    
+          "제 인생에서는 3가지 목표가 있습니다",
+          "1번은 한국에서 가장 가까운 나라부터 자전거로 여행을 다니는 것입니다.",
+          "2019년 코로나 이전에 전국을 30일간 자전거로 일주했으며, 매년 일주일 정도 휴가를 내어 자전거 여행을 할 계획입니다",
+          "2024년에는 일본 도쿄에서 오사카까지 자전거로 일주했으며, 2025년에는 중국 상하이에서 칭다오까지 자전거로 여행을 계획하고 있습니다.",
+          "<br>",  
+          "2번은 제 분야에 대해 국내 최고 전문가가 되는 것입니다.",
+          "현재 공장 자동화와 AI 분야에서 경험을 쌓으며 국내 최고 전문가로 성장하기 위해 노력 중입니다.",
+          "<br>",  
+          "3번은 가정을 꾸릴 수 있는 능력과 자격을 갖추는 것입니다.",
+          "경제적 안정과 개인적인 성장을 통해 미래의 가족에게 든든한 버팀목이 되고 싶습니다.",
+          "<br>",          
+          "저는 이 세 가지 목표를 달성하기 위해 노력하고 있습니다.",
+          "감사합니다.",
+          ],
+        },
+      ]
     };
   
     // Skills 섹션 업데이트
@@ -507,6 +547,14 @@
         <p class="portfolio__date">${project.date}</p>
         <ul>${project.description.map(res => `<p class="portfolio__details">${res}</p>`).join('')}</ul>
         <a href="${project.link}" target="_blank">Link</a>
+      </div>
+    `).join('');
+
+    const personalContainer = document.getElementById('personal');
+    personalContainer.innerHTML = data.Personal.map(project => `
+      <div class="portfolio__item">
+        <p class="portfolio__title">${project.title}</p>
+        <ul>${project.description.map(res => `<p class="portfolio__details">${res}</p>`).join('')}</ul>
       </div>
     `).join('');
   </script>
