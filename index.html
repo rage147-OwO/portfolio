@@ -242,8 +242,7 @@
   <section id="home">
     <div class="home__container">
       <img src="imgs/avatar2.jpg" class="home__avatar" />
-      <h1 class="home__title">가치를 증명합니다</h1>
-      <h1 class="home__title">연봉 5500 또는 그에 준하는 가능성 제시</h1>
+      <h1 class="home__title">머신비전 1년차 개발자입니다다</h1>
       <button class="home__contact">Contact Me</button>
     </div>
     <button class="arrow-up">
@@ -259,34 +258,35 @@
       </div>
     </div>
 
-    <section id="education">
-      <div class="container">
-        <h1 class="career__title">Education</h1>
-        <div class="career__item">
-          <h2 class="career__position" id="education-position"></h2>
-          <p class="career__duration" id="education-duration"></p>
-          <ul class="career__details" id="education-details"></ul>
-        </div>
-      </div>
-    </section>
-
     <section id="career">
       <div class="container">
         <h1 class="career__title">Career</h1>
         <div class="career__item">
-          <h2 class="career__position" id="career-position"></h2>
-          <p class="career__duration" id="career-duration"></p>
+          <div class="career__position" id="career-position"></div>
+          <div class="career__duration" id="career-duration"></div>
           <ul class="career__details" id="career-details"></ul>
         </div>
       </div>
     </section>
 
+    <section id="education">
+      <div class="container">
+        <h1 class="career__title">Education</h1>
+        <div class="career__item">
+          <div class="career__position" id="education-position"></div>
+          <div class="career__duration" id="education-duration"></div>
+          <ul class="career__details" id="education-details"></ul>
+        </div>
+      </div>
+    </section>
+
+
     <section id="communitys">
       <div class="container">
         <h1 class="career__title">Community</h1>
         <div class="career__position" id="community">
-          <p class="portfolio__title" id="community-title"></p>
-          <p class="career__details" id="community-date"></p>
+          <div class="portfolio__title" id="community-title"></div>
+          <div class="career__details" id="community-date"></div>
         </div>
       </div>
     </section>
@@ -295,10 +295,10 @@
       <div class="container">
         <h1 class="career__title">SideProject</h1>
         <div class="career__position" id="side-project">
-          <p class="portfolio__title" id="side-project-title"></p>
-          <p class="career__details" id="side-project-date"></p>
-          <p id="side-project-description"></p>
-          <p id="side-project-technologies"></p>
+          <div class="portfolio__title" id="side-project-title"></div>
+          <div class="career__details" id="side-project-date"></div>
+          <div id="side-project-description"></div>
+          <div id="side-project-technologies"></div>
           <a id="side-project-link" href="#" target="_blank">Link</a>
         </div>
       </div>
@@ -308,8 +308,8 @@
       <div class="container">
         <h1 class="career__title">Personal</h1>
         <div class="career__position" id="personal">
-          <p class="portfolio__title" id="personal-title"></p>
-          <p class="career__details" id="personal-date"></p>
+          <div class="portfolio__title" id="personal-title"></div>
+          <div class="career__details" id="personal-date"></div>
         </div>
       </div>
     </section>
@@ -326,7 +326,7 @@
         "  - Python Multi Processing","  - OpenCV","  - Pytorch",
         "<br>",
         "<h2>Factory Automation",
-        "  - PLC Ladder","  - Arduino","  - Sensor/Motor Control","  - Robot Control",
+        "  - PLC Ladder","  - Arduino(C++)","  - Sensor/Motor Control","  - Robot Control",
         "<br>",
         "<h2>Game Development",
         "  - Unity","  - Photon Network","  - blender",
@@ -335,7 +335,7 @@
         "  - Django/FastAPI","  - HTML/CSS/JS","  - MySQL/MariaDB",
         "<br>",
         "<h2>Mobile App Development",
-        "  - Flutter","  - Android Studio","  - MAUI"
+        "  - Flutter","  - MAUI",
       ],
         interests: ["Digital Twin", "Computer Vision", "Smart Factory", "AR/VR", "Robotics"]
       },
@@ -345,41 +345,46 @@
           duration: "2023년 10월 ~ 현재",
           description: [
             "코스닥 제조업 기업 동일기연의 자회사 동일비전에서 근무중입니다",
+            "스마트카메라와 AI를 활용한 비전검사솔루션 개발 회사입니다",
             "<br>",
-            "비전검사 사업 개발 및 프로젝트 진행",
-            "  - 주로 HW와 SW를 모두 요구하는 프로젝트를 진행합니다",
-            "  - 영업팀과 연계하여 비전검사 프로젝트를 기획하고 개발합니다",
-            "  - 기구팀과 협업하여 프로젝트의 하드웨어를 설계하고 제작합니다",
-            "  - 검사를 위한 rulebase, AI 알고리즘을 개발합니다",
-            "  - 고객사와 협의하여 프로젝트의 요구사항을 정의하고, 프로젝트를 진행합니다",
-            "  - 담당 프로젝트 ",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 가구판재 홀 깊이검사 (1억 이하) 1건",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 가구가스압 조절기 비전검사(1억 이하) 1건",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 공압제어부품 비전검사(1억 이하) 1건",
-            "<br>",
-            "HW지원",
-            "  - 타 개발 프로젝트에서 HW지원을 담당합니다",
-            "  - 고객사와 협의하여 통신시나리오/통신방법을 정의하고 책임집니다",
-            "  - AI 비전프로그램과 고객사 장비 간 통신 라이브러리를 개발합니다",
-            "  - 고객사 생산 장비에 검사기를 연동하고, 검사기를 제어하기 위한 PLC 프로그램을 개발합니다",
-            "  - 검사를 위한 자체 검사기를 개발합니다",
-            "  - PLC 연동 담당 프로젝트 (1억이상 1건, 1억이하 5건)",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 2차전지전극검사 Mitsubishi PLC연동",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 유제품검사 IO-Link연동",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 가스조절밸브검사 Omron PLC연동",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 에어컨부품검사 검사기 연동",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 가스조절핀검사 검사기 연동",
-            "  - 검사기 전장/제어/모션제어 담당 프로젝트 (1억이하 3건건) ",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 2차전지 커터 칼날 검사기 개발",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 가스 노즐 외관 검사기 개발발",
-            "&nbsp&nbsp&nbsp&nbsp&nbsp  - 차량 프레임 부품 검사기 개발",
-            "<br>",
-            "DevOps",
-            "  - 회사의 개발 프로세스를 개선하기 위해 DevOps를 도입하고 관리합니다",
-            "  - 빠른 모델 학습/배포를 위해 학습 플랫폼을 구축하고 관리합니다",
-            "  - 비전검사SW를 배포하기 위한 빌드 파이프라인을 구축하고 관리합니다",
-            "  - SW보안을 위해 USB보안키/암호화/난독화를 적용하고 정책을 관리합니다",
-            "  - 프로그램 납품 PC의 초기설정 정책을 관리합니다",
+            "<hr>",
+            "가구 틸트 부품/구리스 검사기 개발 | 2024.12~2025.03 | 시디즈 납품",
+            "(프로젝트 목표)",
+            " - 부품 11종 누락 검사",
+            " - 구리스 도포량 수치분석",
+            "(수행 내용)",
+            " - 프로젝트 기획/POC을 수행하였습니다",
+            " - 프로젝트를 수주하여 검사기 개발을 수행하였습니다",
+            " - YOLO 기반의 Object Detection 모델을 사용하여 검사 알고리즘을 개발하였습니다",
+            " - 근접센서/카메라/조명/PLC/리니어 액츄레이터를 제어하는 제어기를 개발하였습니다",
+            "(프로젝트 성과)",
+            " - ?????몰루 돈벌었음",
+            "<hr>",
+            "칼날 디펙 검사기 개발 |  2025.01~2025.03 | 도레이BSF 납품",
+            "(프로젝트 목표)",
+            " - 0.01mm 이하의 디펙을 검사",
+            " - 0.1mm 반복정밀도로 칼날의 외경/높이 측정",
+            "(수행 내용)",
+            " - 칼날의 디펙을 검사하고 외경을 측정하는 알고리즘을 개발하였습니다",
+            " - 칼날 검사를 위한 360도 회전/X/Y/Z축 이동이 가능한 검사기를 개발하였습니다",
+            " - 칼날의 높이를 측정하는 알고리즘을 개발하였습니다",
+            "(프로젝트 성과)",
+            " - 검수기준 0.01mm 이하의 디펙을 검사할 수 있습니다",
+            " - 검수기준 0.1mm 반복정밀도로 외경을 측정할 수 있습니다",
+            "<hr>",
+            "액체 주입 정량 검사 |  2025.01~2025.02 | 진시스템 납품",
+            "(프로젝트 목표)",
+            " - 0.01mm 이하의 디펙을 검사합니다",
+            " - 0.1mm 반복정밀도로 칼날의 외경을 측정합니다",
+            " - 0.1mm 반복정밀도로 칼날의 높이를 측정합니다",
+            "(수행 내용)",
+            " - 칼날의 디펙을 검사하고 외경을 측정하는 알고리즘을 개발하였습니다",
+            " - 칼날 검사를 위한 360도 회전/X/Y/Z축 이동이 가능한 검사기를 개발하였습니다",
+            " - 칼날의 높이를 측정하는 알고리즘을 개발하였습니다",
+            "(프로젝트 성과)",
+            " - 검수기준 0.01mm 이하의 디펙을 검사할 수 있습니다",
+            " - 검수기준 0.1mm 반복정밀도로 외경을 측정할 수 있습니다",
+            "<hr>",
           ],
         }
       ],
@@ -421,12 +426,12 @@
       ],
       sideProjects: [
         {
-          title: "아프리카-Unity 연동 서비스",
+          title: "아프리카-VRChat 연동 서비스",
           date: "2024.08 - 2024.09",
           description: ["아프리카TV 플랫폼의 후원 시스템을 Unity에 연동하는 서비스를 개발하여 Github에 공개하였습니다.",
-          "Node.js, FastAPI, MIDI, Unity를 사용하여 개발하였습니다."
+          "Node.js, FastAPI, MIDI, Unity, VRChat SDK를 사용하여 개발하였습니다."
           ],
-          technologies: ["Node.js", "FastAPI","MIDI", "Unity"],
+          technologies: ["Node.js", "FastAPI","MIDI", "Unity", "VRChat SDK"],
           link: "https://www.youtube.com/watch?v=-X335Hi4xwY"
         },
         {
@@ -455,9 +460,9 @@
           link: "https://blog.naver.com/rage147-owo/222987889966"
         },
         {
-          title: "2023 Unity 개발자 어드벤트 캘린더",
+          title: "2023 VRChat 어드벤트 캘린더",
           date: "2022.12",
-          description: ["Unity 월드 개발자들의 칼럼을 모아 신년 하루씩 오픈하는 어드벤트 캘린더를 운영하였습니다.",
+          description: ["VRChat Unity 월드 개발자들의 칼럼을 모아 신년 하루씩 오픈하는 어드벤트 캘린더를 운영하였습니다.",
             "HTML, CSS, JavaScript를 사용하여 개발하였습니다."
           ],
           technologies: ["HTML", "CSS","JavaScript"],
@@ -471,9 +476,9 @@
           link: "https://blog.naver.com/rage147-owo/223088778966"
         },
         {
-          title: "메타버스 가상 연극 '지존'",
+          title: "VRChat상황극 콘테스트",
           date: "2022.08",
-          description: ["Unity를 이용하여 메타버스 가상 연극 '지존'에 참여하여 연출과 프로그래밍을 담당하였습니다."],
+          description: ["Unity를 이용하여 VRChat 메타버스 상황극 콘테스트에 참여하여 연출과 프로그래밍을 담당하였습니다."],
           link: "https://www.youtube.com/watch?v=bWc72RKJfRQ"
         },
         {
@@ -489,7 +494,7 @@
           description: [
           "Unity와 C#을 사용하여 VR 기반의 클래식 RPG게임을 개발하였습니다.",
           "C# 프로그래밍을 담당했고 무기 시스템, PVE시스템, 인스턴스 던전 시스템을 개발했습니다."],
-          link: "https://www.youtube.com/watch?v=8kpf76T8EGY"
+          link: "https://twitter.com/i/status/1485512142648320000"
         },
       ],
       Personal:[
